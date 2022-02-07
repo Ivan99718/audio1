@@ -1,0 +1,251 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    margin: 0 auto;
+    max-width: 1658px;
+    width: 100%;
+}
+
+header{
+    background: #000;
+    height: 56px;
+}
+
+
+header .logo{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+header .background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 4000px;
+    height: 80vh;
+   
+}
+
+header .background .div-img{
+    background-size: cover;
+    background-position-y: bottom;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.play-btn{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.pause-btn{ 
+    background-image: url("./assets/svg/pause.svg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+header .logo .logo-nav .imgIcon{
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;    
+}
+
+header .logo .logo-nav a {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 7px;
+}
+
+header .logo .logo-nav{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+header .logo .logo-nav .buttons {
+    margin-left: auto;
+}
+
+header .logo .logo-nav nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .logo .logo-nav nav ul li {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    list-style-type: none;
+    margin-right: 40px ;   
+}
+
+header .logo .logo-nav nav ul li .button1, .button2, .button3, .button4, .button5{
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 60px;
+    color: #ffffff;
+    transition: 1s;
+    background-color: #000;
+    border: 0 solid #000;
+    cursor: pointer; 
+}
+
+header .logo .logo-nav .buttons .button1.active {
+    color: orange;  
+}
+header .logo .logo-nav .buttons .button2.active {
+    color: orange;
+}
+
+header .logo .logo-nav .buttons .button3.active {
+    color: orange;
+}
+
+header .logo .logo-nav .buttons .button4.active {
+    color: orange;
+}
+
+header .logo .logo-nav .buttons .button5.active {
+    color: orange;
+}
+
+.logo .logo-nav .buttons .button1:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button1.active:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button2:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button2.active:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button3:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button3.active:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button4:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button4.active:hover{
+color:  peru;
+}
+
+.logo .logo-nav .buttons .button5:hover{
+    color:  peru;
+}
+
+.logo .logo-nav .buttons .button5.active:hover{
+    color:  peru;
+}
+
+
+footer{
+    display: flex;
+    height: 70px;
+    background: #000;
+    margin-top: 800px;
+}
+
+.footer-nav{
+    display: flex;
+    margin-left: 110px;
+    margin-top: 16px;
+}
+
+.footer-nav p{
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 18px;
+}
+
+.footer-nav span{
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+.footer-nav a{
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    display: inline-block;
+    margin-right: 1041px;
+}
+
+.footer-nav a:hover{
+    color: peru;
+}
+
+.footer-logo img{
+    margin-top: 5px;
+    width: 125px;
+    height: 45px;
+}
+
+
+@keyframes hue{
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.favicon{
+    animation: hue 10s infinite linear;
+    margin-top: 5px;
+}
+
+.progress_bar{
+    display: none;
+    margin-top: 270px;
+    position: absolute;
+    height: 10px; 
+    width: 500px; 
+    background-color: rgb(217, 255, 0);
+}
+
+.progress_bar.active{
+    display: block;
+    margin-top: 270px;
+    position: absolute;
+    height: 10px; 
+    width: 500px; 
+    background-color: rgb(17, 0, 255);
+}
+
+.progressed{
+    position: absolute;
+    height: 10px;
+    background-color: #c56a02;
+}
